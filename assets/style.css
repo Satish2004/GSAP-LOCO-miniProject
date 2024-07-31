@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#page1 {
+  height: 100vh;
+  width: 100%;
+  background-color: #f5e41b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ /* position: relative;  */
+
+}
+
+#page1 h2 ,
+#loader h2{
+  font-family: "freight-big-pro serif";
+  font-size: 6vw;
+/* position: absolute; */
+  font-weight: 100;
+  letter-spacing: -0.03em;
+  line-height: 5.5vw;
+}
+#page2 {
+  height: 100vh;
+  width: 100%; 
+  background-color: black;
+}
+#page3 {
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+}
+#loader{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    color: white;
+    display: flex;
+    align-items: center;
+   justify-content: center;
+   text-align: center;  
+}
+#loader h2{
+    position: relative;
+    z-index: 9;
+}
+#yellow{
+    height: 100%;
+    width: 100%;
+    background-color: #f5e41b;
+    position: absolute;
+    z-index: 8;
+}
+#loader video{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    object-fit: cover;
+    z-index: 7;
+}
+#black{
+    height: 100%;
+    width: 100%;
+    background-color: #f5e41b;
+    position: absolute;
+    z-index: 6;
+}
+
+/* z index pahle video then yello then text  when we load the screen yellow div is remove we can see the video as well as txt via GSAP */
